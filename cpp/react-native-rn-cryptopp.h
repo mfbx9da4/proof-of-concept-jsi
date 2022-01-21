@@ -14,6 +14,7 @@ namespace example
 
   void install(facebook::jsi::Runtime &jsiRuntime);
 
+  string something();
 }
 
 #endif /* EXAMPLE_H */

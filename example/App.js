@@ -61,7 +61,7 @@ function JsiComponent() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    setResult(global.getItem('hey from rn --- '));
+    setResult(global.getItem('hey from rn'));
   }, []);
 
   return (
