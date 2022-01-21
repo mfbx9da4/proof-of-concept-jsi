@@ -20,3 +20,11 @@ const RnCryptopp = NativeModules.RnCryptopp
 export function multiply(a: number, b: number): Promise<number> {
   return RnCryptopp.multiply(a, b);
 }
+
+export function hey(a: number, b: number): Promise<number> {
+  return RnCryptopp.multiply(a, b);
+}
+
+console.log('heydssd');
+
+export default RnCryptopp;

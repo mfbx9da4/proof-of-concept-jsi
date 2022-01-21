@@ -25,9 +25,11 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-// import mod from 'react-native-rn-cryptopp';
+// import * as mod from 'react-native-rn-cryptopp';
 
-// console.log('mod', mod);
+// conrsole.log('mod', mod);
+
+console.log('global', Object.keys(global));
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -59,7 +61,7 @@ function JsiComponent() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    setResult(global.helloWorld('hey'));
+    setResult(global.getItem('hey from rn --- '));
   }, []);
 
   return (

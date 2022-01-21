@@ -12,7 +12,7 @@ target 'example' do
     :hermes_enabled => false
   )
 
-  pod 'react-native-rn-cryptopp', :path => '../..'
+  # pod 'react-native-rn-cryptopp', :path => '../..'
 
   target 'exampleTests' do
     inherit! :complete
