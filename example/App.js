@@ -27,9 +27,12 @@ import {
 
 // import * as mod from 'react-native-rn-cryptopp';
 
-// conrsole.log('mod', mod);
+// console.log('mod', mod);
 
 console.log('global', Object.keys(global));
+
+console.log('global.getDeviceName()', global.getDeviceName());
+console.log('global.helloWorld()', global.helloWorld());
 
 const Section = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
